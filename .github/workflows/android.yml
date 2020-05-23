@@ -20,5 +20,5 @@ jobs:
       - name: Download Dependencies
         run: bash ./gradlew dependencies
       - name: Build with Gradle
-        run: bash ./gradlew check assemble assembleAndroidTest --stacktrace
+        run: bash ./gradlew check assemble --stacktrace
 
