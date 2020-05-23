@@ -10,4 +10,4 @@ jobs:
     steps:
       - checkout
       - run:
-          command: bash ./gradlew build
+          command: bash ./gradlew check assemble assembleAndroidTest --stacktrace
