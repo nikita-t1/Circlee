@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yarolegovich.mp.MaterialPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="24dp"
+    tools:context="com.studio.timeclock4.fragments.TimeSettingsFragment">
+
+    <com.yarolegovich.mp.MaterialStandardPreference
+        android:id="@+id/working_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mp_title="@string/work_time_per_day" />
+
+    <com.yarolegovich.mp.MaterialStandardPreference
+        android:id="@+id/working_time_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mp_title="@string/work_time_per_week" />
+
+    <com.yarolegovich.mp.MaterialStandardPreference
+        android:id="@+id/pause_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mp_title="@string/pause_time" />
+
+    <com.yarolegovich.mp.MaterialStandardPreference
+        android:id="@+id/flex_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mp_title="@string/flex_time_account" />
+
+    <com.yarolegovich.mp.MaterialStandardPreference
+        android:id="@+id/vacation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mp_title="@string/vacation" />
+
+    <com.yarolegovich.mp.MaterialStandardPreference
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mp_summary=""
+        app:mp_title="Work Days" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:singleLine="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/mondayChip"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="@string/monday"
+                app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/tuesdayChip"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="@string/tuesday"
+                app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/wednesdayChip"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="@string/wednesday"
+                app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/thursdayChip"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="@string/thursday"
+                app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/fridayChip"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="@string/friday"
+                app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/saturdayChip"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="@string/saturday"
+                app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/sundayChip"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="@string/sunday"
+                app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+</com.yarolegovich.mp.MaterialPreferenceScreen>
