@@ -29,6 +29,7 @@ open class MainApplication : Application() {
         Once.initialise(this)
 
         //Peach
+        //Apple
 
         if (BuildConfig.DEBUG) {
 
