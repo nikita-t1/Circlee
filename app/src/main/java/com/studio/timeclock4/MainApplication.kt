@@ -33,6 +33,8 @@ open class MainApplication : Application() {
         //Avocado
         //Banana
 
+        //Issue Fix
+
         if (BuildConfig.DEBUG) {
 
             //Output Style for Logger
