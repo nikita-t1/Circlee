@@ -28,7 +28,8 @@ open class MainApplication : Application() {
         ErrorHandler.init(this)
         Once.initialise(this)
 
-        //SecondBranch
+        //COMMIT
+        //Might Merge Later
 
         if (BuildConfig.DEBUG) {
 
