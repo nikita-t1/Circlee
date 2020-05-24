@@ -30,6 +30,7 @@ open class MainApplication : Application() {
 
         //Peach
         //Apple
+        //Avocado
 
         if (BuildConfig.DEBUG) {
 
