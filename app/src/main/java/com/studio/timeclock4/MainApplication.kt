@@ -28,6 +28,11 @@ open class MainApplication : Application() {
         ErrorHandler.init(this)
         Once.initialise(this)
 
+        //Peach
+        //Apple
+        //Avocado
+        //Banana
+
         if (BuildConfig.DEBUG) {
 
             //Output Style for Logger
