@@ -34,6 +34,7 @@ open class MainApplication : Application() {
         //2
         //3
 
+
         if (BuildConfig.DEBUG) {
 
             //Output Style for Logger
