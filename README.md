@@ -16,6 +16,8 @@
 [![CircleCI](https://circleci.com/gh/nikita-t1/Circle.svg?style=svg)](https://circleci.com/gh/nikita-t1/Circle)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/25e51980c1094de0a1f2a80ecb8f9cd2)](https://www.codacy.com/manual/nikita-t1/TimeClock4?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nikita-t1/TimeClock4&amp;utm_campaign=Badge_Grade)
 [![CodeFactor](https://www.codefactor.io/repository/github/nikita-t1/timeclock4/badge)](https://www.codefactor.io/repository/github/nikita-t1/timeclock4)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ae6ed34d3ac7ceaca92b/maintainability)](https://codeclimate.com/github/nikita-t1/TimeClock4/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/ae6ed34d3ac7ceaca92b/test_coverage)](https://codeclimate.com/github/nikita-t1/TimeClock4/test_coverage)
 <!--
 [![CodeFactor](https://www.codefactor.io/repository/github/nikita-t1/timeclock4/badge/master)](https://www.codefactor.io/repository/github/nikita-t1/timeclock4/overview/master)
 -->
