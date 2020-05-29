@@ -1,4 +1,4 @@
 - [x] first
 - [ ] second
-- [ ] third
+- [x] third
 - [x] fourth
