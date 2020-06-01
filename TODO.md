@@ -1,6 +1,6 @@
 - [x] first
 - [x] second
-- [x] third
+- [ ] third
 - [ ] fourth
 
 # Project Name
