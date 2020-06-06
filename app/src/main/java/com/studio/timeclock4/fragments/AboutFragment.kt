@@ -11,19 +11,13 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import com.github.javiersantos.appupdater.AppUpdaterUtils
-import com.github.javiersantos.appupdater.AppUpdaterUtils.UpdateListener
-import com.github.javiersantos.appupdater.enums.AppUpdaterError
-import com.github.javiersantos.appupdater.enums.UpdateFrom
-import com.github.javiersantos.appupdater.objects.Update
 import com.studio.timeclock4.BuildConfig
 import com.studio.timeclock4.R
 import com.studio.timeclock4.utils.AppIconHelperV26
 import com.studio.timeclock4.viewmodel.AboutViewModel
-import es.dmoral.toasty.Toasty
 import kotlinx.android.synthetic.main.fragment_about.*
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import timber.log.Timber
 import kotlin.math.roundToInt
 import com.studio.timeclock4.utils.PreferenceHelper as Pref
 
@@ -51,35 +45,36 @@ class AboutFragment : Fragment(R.layout.fragment_about) {
         setAppIcon()
 
         update_btn.setOnClickListener() {
-            if (appUpdaterUtils == null) {
-                appUpdaterUtils =
-                    AppUpdaterUtils(requireContext())
-                        .setUpdateFrom(UpdateFrom.JSON)
-                        .setUpdateJSON(Pref.DEV_UpdateLink)
-                        .withListener(object : UpdateListener {
-                            override fun onSuccess(update: Update, isUpdateAvailable: Boolean?) {
-                                if (isUpdateAvailable!!) {
-                                    Toasty.info(
-                                        requireContext(),
-                                        resources.getString(R.string.update_found),
-                                        Toasty.LENGTH_SHORT
-                                    ).show()
-                                } else {
-                                    Toasty.info(
-                                        requireContext(),
-                                        resources.getString(R.string.no_update_found),
-                                        Toasty.LENGTH_SHORT
-                                    ).show()
-                                }
-
-                            }
-
-                            override fun onFailed(error: AppUpdaterError?) {
-                                Timber.e("Something went wrong here")
-                            }
-                        })
-            }
-            appUpdaterUtils?.start()
+            requireActivity().recreate()
+//            if (appUpdaterUtils == null) {
+//                appUpdaterUtils =
+//                    AppUpdaterUtils(requireContext())
+//                        .setUpdateFrom(UpdateFrom.JSON)
+//                        .setUpdateJSON(Pref.DEV_UpdateLink)
+//                        .withListener(object : UpdateListener {
+//                            override fun onSuccess(update: Update, isUpdateAvailable: Boolean?) {
+//                                if (isUpdateAvailable!!) {
+//                                    Toasty.info(
+//                                        requireContext(),
+//                                        resources.getString(R.string.update_found),
+//                                        Toasty.LENGTH_SHORT
+//                                    ).show()
+//                                } else {
+//                                    Toasty.info(
+//                                        requireContext(),
+//                                        resources.getString(R.string.no_update_found),
+//                                        Toasty.LENGTH_SHORT
+//                                    ).show()
+//                                }
+//
+//                            }
+//
+//                            override fun onFailed(error: AppUpdaterError?) {
+//                                Timber.e("Something went wrong here")
+//                            }
+//                        })
+//            }
+//            appUpdaterUtils?.start()
         }
     }
 
