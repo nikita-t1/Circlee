@@ -20,10 +20,10 @@ jobs:
       - name: Download Dependencies
         run: bash ./gradlew dependencies
       - name: Build with Gradle
-        run: bash ./gradlew check assemble --stacktrace
+        run: bash ./gradlew build check assemble --stacktrace
       - name: Artifact
         uses: actions/upload-artifact@v1
         with:
           name: report
-          path: //home/runner/work/Circlee/Circlee/app/build/reports/lint-results.html
+          path: ///home/runner/work/Circlee/Circlee/app/build/reports/lint-results.html
 
